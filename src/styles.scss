@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$header-color : #a80f23;
+$fontTitle : 'Dancing Script', cursive;
+
+.header-total {
+    width: 100%;
+    background-color: $header-color;
+    padding: 20px 0;
+
+        .header-wrapper {
+            height: 22vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 85%;
+            margin: 0 auto;
+
+               a {
+                   color: #fff;
+                   font-size: 30px;
+                   text-decoration: none;
+                   align-self: end;
+                   letter-spacing: 1px;
+               }
+               img {
+                   width: 170px;
+                   background-color: #fff;
+               }
+
+               .header-redes {
+                     display: flex;
+                     justify-content: space-between;
+                     align-items: center;
+                     width: 8%;
+                     align-self: flex-end;
+
+                     svg {
+                         color: #fff;
+                         font-size: 25px;
+                         cursor: pointer;
+                     }
+               }
+        }
+}
+
+
+// list container
+
+.list-container-total {
+
+      .list-container-wrapp {
+           width: 59%;
+           margin: auto;
+      }
+}
+
+// card list
+.item-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 25px;
+    grid-column-gap: 15px;
+    grid-row-gap: 20px;
+    box-shadow: rgba(0, 0, 0, .25) 0px 4px 12px;
+    margin-bottom: 50px;
+
+       .item-card-body {
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+            
+              h2 {
+                margin-bottom: 25px;
+              }
+       }
+       a {
+
+         .img-card-container {
+
+              span {
+
+                  img {
+                    width: 100%;
+                  }
+              }
+         }
+       }
+}
+
+// description
+
+.wrapper-description {
+    width: 80%;
+    margin: auto;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+       .single-item-card {
+           width: 60%;
+           box-shadow: rgba(0, 0, 0, .15) 0px 4px 12px;
+           padding: 25px;
+
+              img {
+                  width: 100%;
+                  padding: 20px 0;
+              }
+              h3 {
+                  font-size: 1.5rem;
+                  padding: 12px 0 0 0;
+              }
+              ul {
+                  list-style: none;
+                  padding: 0;
+              }
+       }
+}
+
+
+/// media query
+
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 22px !important;
+    }
+    .header-total .header-wrapper {
+       height: 7vh;  
+    }
+    .header-total .header-wrapper img {
+        width: 84px;
+    }
+    .header-total .header-wrapper .header-redes {
+        display: none;
+    }
+    .header-total .header-wrapper a {
+        font-size: 20px;
+    }
+    .u-section {
+        padding: 22px 0 !important;
+    }
+    //
+    .list-container-total {
+        .list-container-wrapp {
+            width: 100%;
+        }
+    }
+    .item-card {
+        grid-template-columns: 1fr;
+    }
+    .wrapper-description {
+        width: 100%;
+    }
+    .single-item-card {
+        width: 100%;
+    }
+///  description
+  .desc-section {
+      padding: 0 !important;
+  }
+  .wrapper-description {
+      width: unset !important;
+  }
+  .wrapper-description .single-item-card {
+        width: 100%;
+  }
+    
+}
